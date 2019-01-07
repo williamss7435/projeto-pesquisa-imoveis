@@ -1,0 +1,147 @@
+*{
+	transition: 0.3s;
+}
+
+.teste{
+	background-color: red;
+}
+
+body{
+	background-color: #F6EEEE;
+}
+
+
+.navbar-principal{
+	background-color: rgba(215, 40, 40, 0.9);
+}
+
+nav img{
+	margin: 3.5px 50px 0 0;
+}
+
+nav ul a{
+	color: white;
+}
+
+nav li:hover{
+	color: yellow;
+}
+
+.aba-ativa{
+	background-color: rgba(146, 16, 0, 1);
+}
+
+section img {
+	margin-top: 15px;
+}
+
+.resp{
+	margin-top: 70px;
+	background-color: white;
+}
+
+.btn-pesquisa{
+	background-color: #9C3030;
+	color: white;
+	border: solid 1px #9C3030;
+}
+
+.btn-pesquisa:active{
+	color: yellow;
+}
+
+.btn-voltar{
+	color: white;
+}
+
+table{
+
+}
+
+.info-mais{
+	background-color: #FEE8E8;
+}
+
+.btn-infoMais{
+	width: 100%;
+}
+
+.aa{
+	height: 2000px;
+}
+
+.btn-danger{
+	margin: 5px 5px 0 0;
+}
+
+.panel a{
+	text-decoration: none;
+}
+
+#pag-sp-zl{
+	
+}
+
+.panel-info{
+	text-align: center;
+	font-size: 30px;
+	background-color: #FFE5E5;
+	border-color: white;
+}
+
+.panel-info a{
+	color: black;
+}
+
+.img-center{
+	display: block;
+	margin: 0 auto;
+}
+
+.scroll {
+	overflow: scroll;
+	width: 200px; 
+	height: 200p
+}
+
+#box-login{
+	margin-top: 100px;
+	border-radius: 10px;
+	border: solid 3px rgba(180, 40, 40, 0.9);;
+	background-color: rgba(215, 40, 40, 0.9);
+	width: 550px;
+	height: 340px;
+}
+
+.logo-login{
+	display: block;
+	margin: 15px auto 50px auto;
+}
+
+#span-err{
+	color: white;
+	font-size: 18px;
+}
+
+#msg-login{
+	font-size: 35px;
+	padding: 5px;
+}
+
+#msg{
+	margin-bottom: 500px;
+}
+
+.dropdown-menu {
+	background-color: #D7F6FF;
+}
+
+#box-input{
+	background: red;
+	height: 700px;
+	width: 100%;
+}
+
+#teste1{
+	background-color: red;
+}

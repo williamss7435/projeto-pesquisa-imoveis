@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Empreendimentos</title>
+	<link rel="stylesheet" href="_lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet"  href="_css/estilo.css">
+	<link rel="stylesheet" href="_lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link rel="icon" href="_img/favcon1.png">
+</head>
+<body>
+
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid navbar-principal">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+			</div>
+	
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><img src="_img/logo.jpg" alt="logoTenda"></li>
+				</ul>
+				<div class="navbar-form navbar-left">
+					<div class="btn-group">
+						<button class="btn btn-md btn-success" id="rg-sp">SP</button>
+						<button class="btn btn-md btn-success" id="rg-rj">RJ</button>
+						<button class="btn btn-md btn-success" id="rg-mg">MG</button>
+						<button class="btn btn-md btn-success" id="rg-ba">BA</button>
+						<button class="btn btn-md btn-success" id="rg-rs">RS</button>
+						<button class="btn btn-md btn-success" id="rg-pe">PE</button>
+					</div>
+					<div class="input-group">
+						<input type="text" placeholder="Nome, Rua ou Região" class="form-control" list="list-empreendimentos" id="barra-pesquisa">
+						<span class="input-group-addon" id="span-pesquisa"><span class="glyphicon glyphicon-search"></span></span>
+						<datalist id="list-empreendimentos">
+							<option value="Residencial Colibris">Rua Noventa e Cinco - Jardim São Paulo / Zona Leste (SP)</option>
+							<option value="Residencial Estação Primavera">Rua Raposo da Fonseca - Guaianazes / Zona Leste (SP)</option>
+							<option value="Residencial Clube Garden">Rua Brasil - Guaianazes / Zona Leste (SP)</option>
+							<option value="Residencial Clube Vivaldi">Rua Nolina - Guaianazes / Zona Leste (SP)</option>
+							<option value="Residencial Viver Itaquera">Rua Nolina - Guaianazes / Zona Leste (SP)</option>
+							<option value="Residencial Nova Itaquera">Rua Agrimensor Sugaya - Itaquera/ Zona Leste (SP)</option>
+							<option value="Residencial Villa Park">Rua Morubixaba - Parque Do Carmo / Zona Leste (SP)</option>
+							<option value="Residencial Ilha Dos Flamingos">Rua Tibúrcio de Sousa - Itaim Paulista / Zona Leste (SP)</option>
+							<!-- Zona Leste -->
+							<option value="Residencial Monte Azul">Rua Acomayo - Jardim Dom José / Zona Sul (SP)</option>
+							<option value="Residencial Fit Jardim Botanico">Avenida dos Ourives - Jardim São Savério / Zona Sul (SP)</option>
+							<option value="Residencial Jardim São Luíz Life">Rua Antonio Ramos Rosa - Jardim São Luiz / Zona Sul (SP)</option>
+							<!-- Zona Sul -->
+							<option value="Residencial Turmalina">Rua Kenkiti Shimomoto - Butantã / Zona Oeste (SP)</option>
+							<option value="Residencial Praça São Pedro">Rua Vaticano - Butantã / Zona Oeste (SP)</option>
+							<option value="Residencial Ágata">Rua Kenkiti Shimomoto - Butantã / Zona Oeste (SP)</option>
+							<option value="Residencial Turim">Rua João Rodrigues Leite - Pirituba - Zona Oeste (SP)</option>
+							<!-- Zona Oeste -->
+							<option value="Residencial Estância das Flores">Rua Turvolândia - Vila Nova Bom Sucesso / Guarulhos (SP)</option>
+							<option value="Residencial Vila D´Espanha">Avenida Papa João Paulo I - Guarulhos (SP)</option>
+							<!-- Zona Guarulhos-->
+							<option value="Residencial Nova Zelandia">Rua Dra. Aparecida Fernandes de Jesus Domingues / Cotia (SP)</option>
+							<option value="Residencial Nova Zelandia II">Rua Dra. Aparecida Fernandes de Jesus Domingues / Cotia (SP)</option>
+							<option value="Residencial Verde Cotia">Estrada do Morro Grande - Jardim Ísis / Cotia (SP)</option>
+							<!-- Cotia-->
+							<option value="Residencial Varedas De Itaqua">Rua Netuno - Vila Celeste - Itaquaquecetuba (SP)</option>
+							<option value="Residencial Pedra Bela">Rua Ipês - Vila Urupês / Suzano (SP)</option>
+							<option value="Residencial Vila Esplendore">Rua Koeiji Adachi - Mogi das Cruzes (SP)</option>
+							<option value="Residencial Morada De Ferraz">Rua Ivanildo Saraiva - Ferraz de Vasconcelos (SP)</option>
+							<option value="Residencial Valencia">Avenida Antônio Marquês Figueira - Suzano (SP)</option>
+							<!-- Alto Tiete-->
+							<option value="Residencial Bosque dos Pássaros">Avenida Dom Jaime de Barros Câmara / ABC(SP)</option>
+							<option value="Residencial Fit Planalto">Rua João Éboli - São Bernardo do Campo/ ABC (SP)</option>
+							<option value="Residencial Fit Santo André Life">Av Sara Zirls - Santo André / ABC (SP)</option>
+							<!-- ABC-->
+							<option value="Residencial Villaggio do Jockey">Avenida Salgado Filho - São Vicente / Interior (SP)</option>
+							<option value="Residencial Parque Valença">Rua Olindo Gardelin - Campinas / Interior (SP)</option>
+							<!-- Interior SP-->
+
+							<!-- Rio De Janeiro-->
+							<option value="Residencial Avenida">Avenida Itaoca - Bonsucesso / Zona Norte(RJ)</option>
+							<option value="Residencial Recanto do Sol">Rua Da Patria - Água Santa / Zona Norte(RJ)</option>
+							<option value="Residencial Atenas">Engenho da Rainha - Zona Norte(RJ)</option>
+							<option value="Espaço Engenho Life">Engenho da Rainha - Zona Norte(RJ)</option>
+							<!-- Zona Norte -->
+							<option value="Residencial Pq. Rio Maravilha III">Rua Helio do Amaral - Realengo/ Zona Oeste(RJ)</option>	
+							<option value="Residencial Parque Real Garden">Rua Curitiba - Realengo / Zona Oeste(RJ)</option>
+							<option value="Residencial Vida Leve">Rua dos Caquizeiros - Cosmos / Zona Oeste(RJ)</option>
+							<option value="Residencial Bela Vida II">Estrada do Campinho- Campo Grande / Zona Oeste(RJ)</option>
+							<option value="Residencial Vera Cruz">Estrada João Melo - Campo Grande / Zona Oeste(RJ)</option>
+							<option value="Residencial Viva Mais C. Grande">Av. Cesário de Melo - Campo Grande / Zona Oeste(RJ)</option>
+							<option value="Residencial Bela Vida I">Estrada do Campinho - Campo Grande / Zona Oeste(RJ)</option>
+							<option value="Residencial Reserva das Arvores">Estrada Do Mato Alto - Campo Grande / Zona Oeste(RJ)</option>
+							<option value="Residencial Palácio Imperial">Rua Francisco Belisário - Santa Cruz / Zona Oeste(RJ)</option>
+							<option value="Residencial Gibraltrar Garden">Campo Grande / Zona Oeste(RJ)</option>
+							<option value="Residencial Parma Life">Santissimo / Zona Oeste(RJ)</option>
+							<option value="Residencial West Life">Campo Grande / Zona Oeste(RJ)</option>
+							<option value="Residencial Florença Life">Campo Grande / Zona Oeste(RJ)</option>
+							<!-- Zona Oeste -->
+							<option value="Residencial Bandeirantes Life">Rua Domingos Costa - Amendoeria / São Gonçalo(RJ)</option>
+							<option value="Residencial Pendotiba">Estrada da Paciência - Maria Paula / São Gonçalo(RJ)</option>
+							<option value="Residencial Morada das Violetas">Maria Paula / São Gonçalo(RJ)</option>
+							<option value="Residencial Arsenal Life II">Tribobo / São Gonçalo(RJ)</option>
+							<option value="Residencial Colubande">Columbandê / São Gonçalo(RJ)</option>
+							<option value="Residencial Itauna Life">Matupira / São Gonçalo(RJ)</option>
+							<!-- São Gonçalo-->
+							<option value="Residencial Vila Verde">Rua Ana Carla - Jardim Palmares - Nova Iguaçu(RJ)</option>
+							<option value="Residencial Duo Valverde">Rua Projetada - Jardim Palmares - Nova Iguaçu(RJ)</option>
+							<option value="Residencial Humaita Garden">Nova Iguaçu(RJ)</option>
+							<option value="Residencial Madureira Life">Duque De Caxias(RJ)</option>
+							<option value="Residencial Veneza">Duque De Caxias(RJ)</option>
+							<option value="Residencial Nova Marica Life">Rocha(RJ)</option>
+							<option value=""> / São Gonçalo(RJ)</option>
+							<!-- Baixada-->
+							<option value="Residencial Vila Verde">Avenida Alberto Lamego - Horto / Campos dos Goytacazes(RJ)</option>
+							<option value="Residencial Fit Vivai">Campos dos Goytacazes(RJ)</option>
+							<!-- Campos Goytacazes-->
+
+							<!-- Minas Gerais-->
+							<option value="Residencial Vista Azul">Rua Comendador Teixeira da Costa - Santa Amélia / Belo Horizonete(MG)</option>
+							<option value="Residencial Boa Vista">Rua Desembargador Paulo Mota - Ouro Preto/ Belo Horizonete(MG)</option>
+							<option value="Residencial Viver Bem">Rua Ana Pereira Menezes - São Gabriel / Belo Horizonete(MG)</option>
+							<option value="Residencial Assunção Life">Rua Zircônio - Camargos / Belo Horizonete(MG)</option>
+							<option value="Residencial Betania Park">Rua Ursula Paulino - Cinquenteario/ Belo Horizonete(MG)</option>
+							<option value="Residencial San Martin">Vera Cruz / Belo Horizonete(MG)</option>
+							<option value="Residencial Bueno Aires Tower">Venda Nova / Belo Horizonete(MG)</option>
+							<!-- Belo Horizonte-->
+							<option value="Residencial Cidade Imperial">Av. Prof Djalma Guimarães - Santa Luzia / Metropolitana(MG)</option>
+							<option value="Residencial Solar da Baronesa">Av. Prof Djalma Guimarães - Santa Luzia / Metropolitana(MG)</option>
+							<option value="Residencial Alto da Colina">Av. Prof Djalma Guimarães - Santa Luzia / Metropolitana(MG)</option>
+							<option value="Residencial Vila Florida">Av. Mario Fonseca Viana - Vespasiano/ Região Metropolitana(MG)</option>
+							<option value="Residencial Portal De Santa Luzia">Rua Ana Batista Cruz-  Santa Luzia/ Metropolitana(MG)</option>
+							<!-- Região Metropolitana-->
+							<option value="Residencial Felicitá">Avenida José Inácio Filho / Betim(MG)</option>
+							<option value="Residencial Betim Life I">Rua Nova York / Betim(MG)</option>
+							<option value="Residencial Betim Life II">Rua Nova York / Betim(MG)</option>
+							<!-- Betim-->
+							<option value="Residencial Balneario do Valle">Av. José Inácio Filho/ Contagem(MG)</option>
+							<!-- Contagem-->
+							<option value="R. Governador Valadares Life">Avenida 14 Bis - Governador Valadares(MG)</option>
+							<option value="Residencial Firenze Life">Sete Lagoas(MG)</option>	
+							<!-- G. Valadares E Sete Lagoas-->
+
+							<!-- Bahia-->
+							<option value="Residencial Bellas Aguas">Rua Cabaceiras - Plataforma / Salvador(BA)</option>
+							<option value="Residencial Mar Azul">Rua Formosa São João Plataforma / Salvador(BA)</option>
+							<option value="Residencial  Vista do Vale">Rua Juscelino Kubistchek - Cajazeiras / Salvador(BA)</option>
+							<option value=""> / Salvador(BA)</option>	
+							<!-- Salvador-->
+							<option value="Residencial Viena">Loteamento Parque Nascente do Capivara - Espaço Alfa / Camaçari(BA)</option>
+							<option value="Residencial Mar de Abrantes">Rua Sucupió - Estrada do Coco / Camaçari(BA)</option>
+							<option value="Residencial Terra Brasilis">Avenida Jorge Amado - Praia de Arembepe / Camaçari(BA)</option>
+							<option value="Residencial Gênova">Rua Boa União - Catu de Abrantes / Camaçari(BA)</option>
+							<!-- Camaçari-->
+							<option value="Residencial Alto Do Picuaia">Av. José Leite - Caji / Lauro De Freitas(BA)</option>
+							<!-- Lauro De Freitas-->
+
+							<!-- Rio Grande Do Sul-->
+							<option value="Residencial Querencia Amada">Rua Irmã Teresilda Steffen - Alto Petrópolis /Porto Alegre(RS)</option>
+							<option value="Residencial Querencia Gaucha"> Rua Irmã Teresilda Steffen - Alto Petrópolis /Porto Alegre(RS)</option>
+							<option value="Residencial Vida Alegre Sarandi">Av. Francisco Silveira Bittencourt - Sarandi /Porto Alegre(RS)</option>
+							<option value="Residencial Boulevard das Palmeiras">Av. Assis Brasil - Sarandi /Porto Alegre(RS)</option>
+							<option value="Residencial Provincia do Porto">Av. Edgar Pires de Castro - Aberta dos Morros /Porto Alegre(RS)</option>
+							<option value="Residencial Campos do Sul">Rua Família Gonçalves Carneiro - Cavalhada /Porto Alegre(RS)</option>
+							<option value="Residencial Juscelino Kubitschek I">Jardim Dona Leopoldina /Porto Alegre(RS)</option>
+							<option value=""> /Porto Alegre(RS)</option>
+							<option value=""> /Porto Alegre(RS)</option>
+							<option value=""> /Porto Alegre(RS)</option>
+							<!-- Porto Alegre-->
+							<option value="Residencial Vila Germânica">Av. Arnaldo Pereira da Silva - Santos Dumont /São Leopoldo(RS)</option>
+							<!-- São Leopoldo-->
+							<option value="Residencial Alto da Baviera">Rua Lopes Trovão, / Canoas(RS)</option>
+							<option value="Residencial Vida Alegre Canoas">Rua Roberto Francisco Behrens / Canoas(RS)</option>
+							<!-- Canoas-->
+							<option value="Residencial Fit Giardino">Rua José Bisol- Nossa Sra. de Lourdes - Caxias do Sul(RS)</option>
+							<option value="Residencial Papa João XXIII">Avenida Papa João XXIII - Cachoeirinha(RS)</option>
+							<!-- Caxias Do Sul E Cachoeirinha-->
+
+							<!-- Pernambuco-->
+							<option value="Residencial Engenho Camarás">Av. Dr Luiz Inácio de Andrade Lima Neto - Alberto Maia - Camaragibe(PE)</option>
+							<!-- Camaragibe-->
+							<option value="Residencial Campos de Aviação">Rua Campo de Pouso - Maranguape / Paulista(PE)</option>
+							<!-- Paulista-->
+							<option value="Residencial Praia de Jangada">Rua da Paz - Barra de Jangada / Jaboatão dos Guararapes(PE)</option>
+							<!-- Jaboatão dos Guararapes-->
+						</datalist>
+					</div>
+				</form>		
+			</div>
+		</div>
+	</nav>
+	<!-- Fim Barra De navegação -->
+
+	<!-- Pagina São Paulo -->
+	<div class="container resp" id="pag-sp">
+		<div class="row">
+			<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li><a href="#">Empreendimentos</a></li>
+				  <li class="active">São Paulo</li>
+			</ol>
+		<div class="panel panel-success">
+			<div class="panel-body">
+				<a class="btn btn-danger col-md-2" href="#map-sp-zl">Zona Leste (SP)</a>
+				<a class="btn btn-danger col-md-2" href="#map-sp-zs">Zona Sul (SP)</a>
+				<a class="btn btn-danger col-md-2" href="#map-sp-zo">Zona Oeste (SP)</a>
+				<a class="btn btn-danger col-md-2" href="#map-sp-gua">Guarulhos</a>
+				<a class="btn btn-danger col-md-2" href="#map-sp-co">Cotia</a>
+				<a class="btn btn-danger col-md-2" href="#map-sp-alt">Alto Tiete</a>
+				<a class="btn btn-danger col-md-2" href="#map-sp-abc">ABC</a>
+				<a class="btn btn-danger col-md-2" href="#map-sp-int">Interior</a>			
+			</div>
+		</div>
+			<div id="pag-sp-zl"></div>
+			<div id="pag-sp-zs"></div>
+			<div id="pag-sp-zo"></div>
+			<div id="pag-sp-gua"></div>
+			<div id="pag-sp-co"></div>
+			<div id="pag-sp-alt"></div>
+			<div id="pag-sp-abc"></div>
+			<div id="pag-sp-int"></div>
+		</div>
+	</div>
+	<!-- Fim Pagina São Paulo -->
+	
+	<!-- Pagina Rio De Janeiro -->
+	<div class="container resp" id="pag-rj">
+		<div class="row">
+			<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li><a href="#">Empreendimentos</a></li>
+				  <li class="active">Rio De Janeiro</li>
+			</ol>
+		<div class="panel panel-success">
+			<div class="panel-body">
+				<a class="btn btn-danger col-md-2" href="#map-rj-zn">Zona Norte (RJ)</a>
+				<a class="btn btn-danger col-md-2" href="#map-rj-zo">Zona Oeste (RJ)</a>
+				<a class="btn btn-danger col-md-2" href="#map-rj-sgo">São Gonçalo</a>
+				<a class="btn btn-danger col-md-2" href="#map-rj-bai">Baixada Fluminense</a>
+				<a class="btn btn-danger col-md-2" href="#map-rj-cgo">Campo Goytacazes</a>
+			</div>
+		</div>
+			<div id="pag-rj-zn"></div>
+			<div id="pag-rj-zo"></div>
+			<div id="pag-rj-sgo"></div>
+			<div id="pag-rj-bai"></div>
+			<div id="pag-rj-cgo"></div>
+		</div>
+	</div>
+	<!-- Fim Pagina Rio De Janeiro -->
+
+	<!-- Pagina Minas Gerais -->
+	<div class="container resp" id="pag-mg">
+		<div class="row">
+			<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li><a href="#">Empreendimentos</a></li>
+				  <li class="active">Minas Gerais</li>
+			</ol>
+		<div class="panel panel-success">
+			<div class="panel-body">
+				<a class="btn btn-danger col-md-2" href="#map-mg-bh">Belo Horizonte</a>
+				<a class="btn btn-danger col-md-2" href="#map-mg-rm">Região Metropolitana</a>
+				<a class="btn btn-danger col-md-2" href="#map-mg-bem">Betim</a>
+				<a class="btn btn-danger col-md-2" href="#map-mg-con">Contagem</a>
+				<a class="btn btn-danger col-md-2" href="#map-mg-ges">G. Valadares / Sete Lagoas</a>
+			</div>
+		</div>
+			<div id="pag-mg-bh"></div>
+			<div id="pag-mg-rm"></div>
+			<div id="pag-mg-bem"></div>
+			<div id="pag-mg-con"></div>
+			<div id="pag-mg-ges"></div>
+		</div>
+	</div>
+	<!-- Fim Pagina Minas Gerais -->
+
+	<!-- Pagina Bahia -->
+	<div class="container resp" id="pag-ba">
+		<div class="row">
+			<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li><a href="#">Empreendimentos</a></li>
+				  <li class="active">Bahia</li>
+			</ol>
+		<div class="panel panel-success">
+			<div class="panel-body">
+				<a class="btn btn-danger col-md-2" href="#map-ba-sa">Salvador</a>
+				<a class="btn btn-danger col-md-2" href="#map-ba-ca">Camaçari</a>
+				<a class="btn btn-danger col-md-2" href="#map-ba-lau">Lauro De Freitas</a>
+			</div>
+		</div>
+			<div id="pag-ba-sa"></div>
+			<div id="pag-ba-ca"></div>
+			<div id="pag-ba-lau"></div>
+		</div>
+	</div>
+	<!-- Fim Pagina Bahia -->
+
+	<!-- Pagina Rio Grande Do Sul -->
+	<div class="container resp" id="pag-rs">
+		<div class="row">
+			<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li><a href="#">Empreendimentos</a></li>
+				  <li class="active">Rio Grande Do Sul</li>
+			</ol>
+		<div class="panel panel-success">
+			<div class="panel-body">
+				<a class="btn btn-danger col-md-2" href="#map-rs-zn">PA - Zona Norte</a>
+				<a class="btn btn-danger col-md-2" href="#map-rs-zs">PA - Zona Sul</a>
+				<a class="btn btn-danger col-md-2" href="#map-rs-sl">São Leopoldo</a>
+				<a class="btn btn-danger col-md-2" href="#map-rs-ca">Canoas</a>
+				<a class="btn btn-danger col-md-2" href="#map-rs-cec">Caxias Do S. e Cachoeirinha</a>
+			</div>
+		</div>
+			<div id="pag-rs-zn"></div>
+			<div id="pag-rs-zs"></div>
+			<div id="pag-rs-sl"></div>
+			<div id="pag-rs-ca"></div>
+			<div id="pag-rs-cec"></div>
+		</div>
+	</div>
+	<!-- Fim Pagina Rio Grande Do Sul -->
+
+	<!-- Pagina Pernambuco -->
+	<div class="container resp" id="pag-pe">
+		<div class="row">
+			<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li><a href="#">Empreendimentos</a></li>
+				  <li class="active">Pernambuco</li>
+			</ol>
+		<div class="panel panel-success">
+			<div class="panel-body">
+				<a class="btn btn-danger col-md-2" href="#map-pe-ca">Camaragibe</a>
+				<a class="btn btn-danger col-md-2" href="#map-pe-pa">Paulista</a>
+				<a class="btn btn-danger col-md-2" href="#map-pe-ja">Jaboatão</a>
+			</div>
+		</div>
+			<div id="pag-pe-ca"></div>
+			<div id="pag-pe-pa"></div>
+			<div id="pag-pe-ja"></div>
+		</div>
+	</div>
+	<!-- Fim Pagina Pernambuco -->
+
+		<!-- Pesquisa -->
+	<div class="container resp" id="pag-pesquisa">
+		<div class="row">
+			<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li><a href="#">Empreendimentos</a></li>
+				  <li class="active">Pesquisa</li>
+			</ol>
+			<div id="pag-pes"> 
+				<div class=row>
+					<div class="col-xs-offset-1 col-xs-11"><h1>Como Usar:</h1></div>
+				</div>
+				<div class="row">
+					<div class="col-xs-offset-1 col-xs-11">Navegue Através Do Menu<br><img src="_img/tutorial01.jpg" alt=""><br><br></div>
+				</div>
+				<div class="row">
+					<div class="col-xs-offset-1 col-xs-11">Ou Busque O Residencial Pelo Nome<br><img src="_img/tutorial02.jpg" alt=""><br><br></div>
+				</div>
+				<div class="row">
+					<div class="col-xs-offset-1 col-xs-11">Rua ou Região<br><img src="_img/tutorial03.jpg" alt=""><br><br><br></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fim Pesquisa -->
+
+	<script src="_lib/jquery-3.1.1.min.js"></script>
+	<script src="_json/json_empreendimentos.js"></script>
+	<script src="_lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="_js/script.js"></script>
+	<<script src="_lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+</body>
+</html>
