@@ -1,8 +1,11 @@
-# projeto-pesquisa-imoveis-2017
-Projeto pessoal com o intuito de facilitar pesquisas sobre imóveis no meu antigo emprego<br>
-Data: Data: 02/2017<br>
-Descrição: Projeto usando apenas tecnologia front-end para fazer pesquisar percorrendo um arquivo JSON.(PS: Todos os preços foram removidos antes do push)<br>
+# Projeto Pesquisa de Imóveis 2017
 
-<a href="http://pt-br.tinypic.com?ref=20f9d2o" target="_blank"><img src="http://i68.tinypic.com/20f9d2o.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
-<hr>
-<a href="http://pt-br.tinypic.com?ref=a5colh" target="_blank"><img src="http://i64.tinypic.com/a5colh.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
+>Projeto pessoal com o intuito de facilitar pesquisas sobre imóveis no meu antigo emprego
+
+>Data: Data: 02/2017
+
+>Descrição: Projeto usando apenas tecnologia front-end para fazer pesquisar percorrendo um arquivo JSON.(PS: Todos os preços foram removidos antes do push)
+
+![tutorial](https://user-images.githubusercontent.com/37387374/53838311-78ae7980-3f73-11e9-8046-2563c4f26fa3.jpg)
+
+![home](https://user-images.githubusercontent.com/37387374/53838298-6f251180-3f73-11e9-8130-9145ac2d6f39.jpg)
